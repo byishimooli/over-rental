@@ -1,0 +1,68 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Logo Styling */
+  .navbar-logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Navbar Menu */
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Ensures black text */
+  }
+  
+  .navbar-menu li:hover {
+    color: #555; /* Optional: Slight color change on hover */
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10;
+    min-width: 150px;
+  }
+  
+  .dropdown-content a {
+    text-decoration: none;
+    color: #000; /* Black text in dropdown links */
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+    color: #000; /* Ensure hover keeps text black */
+  }
+  
+  /* Show Dropdown on Hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
